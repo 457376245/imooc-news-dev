@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5681e76a-404a-41bd-9776-efcc539d8151" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\maven_repository" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-tomcat-8.5.50\conf\server.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="dedicatedModuleDir" value="$PROJECT_DIR$/aa" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2SahOXRgJjGYlKJJisdAFw3I7qX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596438100229" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.25714287" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.imooc.admin.repository" />
+      <recent name="com.imooc.files.resource" />
+      <recent name="com.imooc.api" />
+      <recent name="com.imooc.utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.imooc.user.controller" />
+      <recent name="com.imooc.api.interceptors" />
+      <recent name="com.imooc.article.mapper" />
+      <recent name="com.imooc.pojo.vo" />
+      <recent name="com.imooc.article.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imooc-news-dev-service-article/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/imooc-news-dev-service-user/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/imooc-news-dev-service-article/src/main/resources" />
+      <recent name="$PROJECT_DIR$/imooc-news-dev-service-admin/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/imooc-news-dev-model/src/main/java/com/imooc/validate" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.service-user:8003">
+    <configuration name="ArticleGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.imooc.mybatis.utils.ArticleGenerator" />
+      <module name="mybatis-generator-database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.mybatis.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="service-admin:8005" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="imooc-news-dev-service-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.admin.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="service-article:8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="imooc-news-dev-service-article" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.article.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.article.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="service-files:8004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="imooc-news-dev-service-files" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.files.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.files.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="service-user:8003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="imooc-news-dev-service-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.user.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.service-user:8003" />
+        <item itemvalue="Spring Boot.service-article:8001" />
+        <item itemvalue="Spring Boot.service-files:8004" />
+        <item itemvalue="Spring Boot.service-admin:8005" />
+        <item itemvalue="Application.ArticleGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5681e76a-404a-41bd-9776-efcc539d8151" name="Default Changelist" comment="" />
+      <created>1592838871506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592838871506</updated>
+      <workItem from="1592838872989" duration="7740000" />
+      <workItem from="1592911455961" duration="3731000" />
+      <workItem from="1592927544244" duration="6099000" />
+      <workItem from="1593003759292" duration="9775000" />
+      <workItem from="1593008776482" duration="177000" />
+      <workItem from="1593141031546" duration="7043000" />
+      <workItem from="1593153594011" duration="3000" />
+      <workItem from="1593307688010" duration="7429000" />
+      <workItem from="1593322574937" duration="4321000" />
+      <workItem from="1593394772764" duration="8848000" />
+      <workItem from="1593483886635" duration="5345000" />
+      <workItem from="1593568224113" duration="3920000" />
+      <workItem from="1593598266817" duration="717000" />
+      <workItem from="1593657338797" duration="4885000" />
+      <workItem from="1593997670817" duration="8000" />
+      <workItem from="1594000278925" duration="35000" />
+      <workItem from="1594083202468" duration="10630000" />
+      <workItem from="1594173922204" duration="6877000" />
+      <workItem from="1594258943457" duration="7735000" />
+      <workItem from="1594347050888" duration="9077000" />
+      <workItem from="1594518934229" duration="2208000" />
+      <workItem from="1594692246078" duration="3440000" />
+      <workItem from="1594777418896" duration="7749000" />
+      <workItem from="1594862391862" duration="6093000" />
+      <workItem from="1594951329665" duration="1623000" />
+      <workItem from="1595205046316" duration="6583000" />
+      <workItem from="1595295508493" duration="2265000" />
+      <workItem from="1595302555116" duration="16000" />
+      <workItem from="1595380471492" duration="5034000" />
+      <workItem from="1595470917734" duration="4785000" />
+      <workItem from="1595553806906" duration="7356000" />
+      <workItem from="1595640685229" duration="5130000" />
+      <workItem from="1595729818866" duration="4987000" />
+      <workItem from="1595774726339" duration="299000" />
+      <workItem from="1595815501241" duration="4611000" />
+      <workItem from="1595857358899" duration="7029000" />
+      <workItem from="1595898519033" duration="8055000" />
+      <workItem from="1595988542960" duration="7270000" />
+      <workItem from="1596074047369" duration="4646000" />
+      <workItem from="1596163031059" duration="845000" />
+      <workItem from="1596165740563" duration="328000" />
+      <workItem from="1596167126539" duration="4534000" />
+      <workItem from="1596331495597" duration="7151000" />
+      <workItem from="1596419800791" duration="11572000" />
+      <workItem from="1596508910129" duration="2687000" />
+      <workItem from="1689390572016" duration="1743000" />
+      <workItem from="1689560478017" duration="11604000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="839" y="263" key="#com.intellij.ide.util.MemberChooser" timestamp="1689576518485">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state x="839" y="263" key="#com.intellij.ide.util.MemberChooser/0.0.2065.1114@0.0.2065.1114" timestamp="1689576518485" />
+    <state x="813" y="312" key="FileChooserDialogImpl" timestamp="1689390642858">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state x="813" y="312" key="FileChooserDialogImpl/0.0.2065.1114@0.0.2065.1114" timestamp="1689390642858" />
+    <state width="1598" height="276" key="GridCell.Tab.0.bottom" timestamp="1689579712864">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.0.bottom/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712864" />
+    <state width="1598" height="276" key="GridCell.Tab.0.center" timestamp="1689579712864">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.0.center/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712864" />
+    <state width="1598" height="276" key="GridCell.Tab.0.left" timestamp="1689579712864">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.0.left/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712864" />
+    <state width="1598" height="276" key="GridCell.Tab.0.right" timestamp="1689579712864">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.0.right/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712864" />
+    <state width="1598" height="276" key="GridCell.Tab.1.bottom" timestamp="1689579712865">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.1.bottom/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712865" />
+    <state width="1598" height="276" key="GridCell.Tab.1.center" timestamp="1689579712865">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.1.center/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712865" />
+    <state width="1598" height="276" key="GridCell.Tab.1.left" timestamp="1689579712864">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.1.left/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712864" />
+    <state width="1598" height="276" key="GridCell.Tab.1.right" timestamp="1689579712865">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.1.right/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712865" />
+    <state width="1598" height="276" key="GridCell.Tab.2.bottom" timestamp="1689579712865">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.2.bottom/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712865" />
+    <state width="1598" height="276" key="GridCell.Tab.2.center" timestamp="1689579712865">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.2.center/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712865" />
+    <state width="1598" height="276" key="GridCell.Tab.2.left" timestamp="1689579712865">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.2.left/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712865" />
+    <state width="1598" height="276" key="GridCell.Tab.2.right" timestamp="1689579712865">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state width="1598" height="276" key="GridCell.Tab.2.right/0.0.2065.1114@0.0.2065.1114" timestamp="1689579712865" />
+    <state x="542" y="202" key="SettingsEditor" timestamp="1689577462237">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state x="542" y="202" key="SettingsEditor/0.0.2065.1114@0.0.2065.1114" timestamp="1689577462237" />
+    <state x="732" y="289" width="602" height="594" key="find.popup" timestamp="1689579603118">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state x="732" y="289" width="602" height="594" key="find.popup/0.0.2065.1114@0.0.2065.1114" timestamp="1689579603118" />
+    <state x="696" y="244" width="672" height="678" key="search.everywhere.popup" timestamp="1689565475791">
+      <screen x="0" y="0" width="2065" height="1114" />
+    </state>
+    <state x="696" y="244" width="672" height="678" key="search.everywhere.popup/0.0.2065.1114@0.0.2065.1114" timestamp="1689565475791" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/imooc-news-dev-common/src/main/java/com/imooc/utils/SMSUtils.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/imooc-news-dev-common/src/main/java/com/imooc/utils/SMSUtils.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/imooc-news-dev-service-user/src/main/java/com/imooc/user/controller/PassportController.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.25714287" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>imooc-news-dev-service-files</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.25714287" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
