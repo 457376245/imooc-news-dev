@@ -43,11 +43,11 @@ public class FileUploaderController implements FileUploaderControllerApi {
     @Autowired
     private FileResource fileResource;
 
-    @Autowired
-    private AliImageReviewUtils aliImageReviewUtils;
+//    @Autowired
+//    private AliImageReviewUtils aliImageReviewUtils;
 
-    @Autowired
-    private GridFSBucket gridFSBucket;
+//    @Autowired
+//    private GridFSBucket gridFSBucket;
 
     @Override
     public GraceJSONResult uploadFace(String userId,
@@ -62,7 +62,8 @@ public class FileUploaderController implements FileUploaderControllerApi {
             if (StringUtils.isNotBlank(fileName)) {
                 String fileNameArr[] = fileName.split("\\.");
                 // 获得后缀
-                String suffix = fileNameArr[fileNameArr.length - 1];
+//                String suffix = fileNameArr[fileNameArr.length - 1];
+                String suffix = getFileExt(fileName);
                 // 判断后缀符合我们的预定义规范
                 if (!suffix.equalsIgnoreCase("png") &&
                         !suffix.equalsIgnoreCase("jpg") &&
@@ -87,6 +88,7 @@ public class FileUploaderController implements FileUploaderControllerApi {
         String finalPath = "";
         if (StringUtils.isNotBlank(path)) {
             finalPath = fileResource.getHost() + path;
+            logger.info("fullPath:{}",finalPath);
 //            finalPath = fileResource.getOssHost() + path;
         } else {
             return GraceJSONResult.errorCustom(ResponseStatusEnum.FILE_UPLOAD_FAILD);
@@ -94,6 +96,15 @@ public class FileUploaderController implements FileUploaderControllerApi {
 
 //        return GraceJSONResult.ok(doAliImageReview(finalPath));
         return GraceJSONResult.ok(finalPath);
+    }
+
+    private String getFileExt(String fileName) {
+        int dotIndex = fileName.lastIndexOf(".");
+        if (dotIndex > 0 && dotIndex < fileName.length() - 1) {
+            return fileName.substring(dotIndex + 1);
+        } else {
+            return ""; // 返回空字符串，表示没有扩展名或者扩展名为空
+        }
     }
 
     @Override
@@ -162,7 +173,7 @@ public class FileUploaderController implements FileUploaderControllerApi {
          */
         boolean result = false;
         try {
-            result = aliImageReviewUtils.reviewImage(pendingImageUrl);
+//            result = aliImageReviewUtils.reviewImage(pendingImageUrl);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -177,24 +188,28 @@ public class FileUploaderController implements FileUploaderControllerApi {
     @Override
     public GraceJSONResult uploadToGridFS(NewAdminBO newAdminBO)
             throws Exception {
-
+        
         // 获得图片的base64字符串
-        String file64 = newAdminBO.getImg64();
-
-        // 将base64字符串转换为byte数组
-        byte[] bytes = new BASE64Decoder().decodeBuffer(file64.trim());
-
-        // 转换为输入流
-        ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
-
-        // 上传到gridfs中
-        ObjectId fileId = gridFSBucket.uploadFromStream(newAdminBO.getUsername() + ".png", inputStream);
-
-        // 获得文件在gridfs中的主键id
-        String fileIdStr = fileId.toString();
-
-        return GraceJSONResult.ok(fileIdStr);
+//        String file64 = newAdminBO.getImg64();
+//
+//        // 将base64字符串转换为byte数组
+//        byte[] bytes = new BASE64Decoder().decodeBuffer(file64.trim());
+//
+//        // 转换为输入流
+//        ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
+//
+//        // 上传到gridfs中
+//        ObjectId fileId = gridFSBucket.uploadFromStream(newAdminBO.getUsername() + ".png", inputStream);
+//
+//        // 获得文件在gridfs中的主键id
+//        String fileIdStr = fileId.toString();
+//
+//        return GraceJSONResult.ok(fileIdStr);
+        
+        return null;
     }
+    
+    
 
     @Override
     public void readInGridFS(String faceId,
@@ -214,33 +229,35 @@ public class FileUploaderController implements FileUploaderControllerApi {
     }
 
     private File readGridFSByFaceId(String faceId) throws Exception {
-
-        GridFSFindIterable gridFSFiles
-                = gridFSBucket.find(Filters.eq("_id", new ObjectId(faceId)));
-
-        GridFSFile gridFS = gridFSFiles.first();
-
-        if (gridFS == null) {
-            GraceException.display(ResponseStatusEnum.FILE_NOT_EXIST_ERROR);
-        }
-
-        String fileName = gridFS.getFilename();
-        System.out.println(fileName);
-
-        // 获取文件流，保存文件到本地或者服务器的临时目录
-        File fileTemp = new File("/workspace/temp_face");
-        if (!fileTemp.exists()) {
-            fileTemp.mkdirs();
-        }
-
-        File myFile = new File("/workspace/temp_face/" + fileName);
-
-        // 创建文件输出流
-        OutputStream os = new FileOutputStream(myFile);
-        // 下载到服务器或者本地
-        gridFSBucket.downloadToStream(new ObjectId(faceId), os);
-
-        return myFile;
+//
+//        GridFSFindIterable gridFSFiles
+//                = gridFSBucket.find(Filters.eq("_id", new ObjectId(faceId)));
+//
+//        GridFSFile gridFS = gridFSFiles.first();
+//
+//        if (gridFS == null) {
+//            GraceException.display(ResponseStatusEnum.FILE_NOT_EXIST_ERROR);
+//        }
+//
+//        String fileName = gridFS.getFilename();
+//        System.out.println(fileName);
+//
+//        // 获取文件流，保存文件到本地或者服务器的临时目录
+//        File fileTemp = new File("/workspace/temp_face");
+//        if (!fileTemp.exists()) {
+//            fileTemp.mkdirs();
+//        }
+//
+//        File myFile = new File("/workspace/temp_face/" + fileName);
+//
+//        // 创建文件输出流
+//        OutputStream os = new FileOutputStream(myFile);
+//        // 下载到服务器或者本地
+//        gridFSBucket.downloadToStream(new ObjectId(faceId), os);
+//
+//        return myFile;
+        
+        return null;
     }
 
     @Override

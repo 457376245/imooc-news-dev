@@ -6,6 +6,7 @@ import com.github.tobato.fastdfs.domain.fdfs.StorePath;
 import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import com.imooc.files.resource.FileResource;
 import com.imooc.files.service.UploaderService;
+import com.imooc.files.service.UploaderServiceBak;
 import com.imooc.utils.extend.AliyunResource;
 import org.n3r.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.InputStream;
 
 @Service
-public class UploaderServiceImpl implements UploaderService {
+public class UploaderServiceImplBak implements UploaderServiceBak {
 
     @Autowired
     public FastFileStorageClient fastFileStorageClient;
@@ -48,32 +49,30 @@ public class UploaderServiceImpl implements UploaderService {
                             String fileExtName) throws Exception {
 
         // Endpoint以杭州为例，其它Region请按实际情况填写。
-//        String endpoint = fileResource.getEndpoint();
-//        // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
-//        String accessKeyId = aliyunResource.getAccessKeyID();
-//        String accessKeySecret = aliyunResource.getAccessKeySecret();
-//
-//        // 创建OSSClient实例。
-//        OSS ossClient = new OSSClientBuilder().build(endpoint,
-//                                                    accessKeyId,
-//                                                    accessKeySecret);
-////        images/abc/10010/dog.png
-//
-//        String fileName = sid.nextShort();
-//        String myObjectName = fileResource.getObjectName()
-//                + "/" + userId + "/" + fileName + "." + fileExtName;
-//
-//        // 上传网络流。
-//        InputStream inputStream = file.getInputStream();
-//        ossClient.putObject(fileResource.getBucketName(),
-//                            myObjectName,
-//                            inputStream);
-//
-//        // 关闭OSSClient。
-//        ossClient.shutdown();
-//
-//        return myObjectName;
-        
-        return null;
+        String endpoint = fileResource.getEndpoint();
+        // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
+        String accessKeyId = aliyunResource.getAccessKeyID();
+        String accessKeySecret = aliyunResource.getAccessKeySecret();
+
+        // 创建OSSClient实例。
+        OSS ossClient = new OSSClientBuilder().build(endpoint,
+                                                    accessKeyId,
+                                                    accessKeySecret);
+//        images/abc/10010/dog.png
+
+        String fileName = sid.nextShort();
+        String myObjectName = fileResource.getObjectName()
+                + "/" + userId + "/" + fileName + "." + fileExtName;
+
+        // 上传网络流。
+        InputStream inputStream = file.getInputStream();
+        ossClient.putObject(fileResource.getBucketName(),
+                            myObjectName,
+                            inputStream);
+
+        // 关闭OSSClient。
+        ossClient.shutdown();
+
+        return myObjectName;
     }
 }

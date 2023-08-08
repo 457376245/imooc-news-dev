@@ -121,6 +121,7 @@ public class PassportController extends BaseController implements PassportContro
         // 5. 返回用户状态
         return GraceJSONResult.ok(userActiveStatus);
     }
+    //todo 单点登录功能
     @Override
     public GraceJSONResult doLogin(@Valid RegistLoginBO registLoginBO,
                                    BindingResult result,

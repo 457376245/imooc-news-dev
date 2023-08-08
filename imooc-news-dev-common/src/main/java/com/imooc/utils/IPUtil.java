@@ -32,6 +32,6 @@ public class IPUtil {
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getRemoteAddr();
         }
-        return ip.equals("0:0:0:0:0:0:0:1")?"localhost":IPUtil.getRequestIp(request);
+        return ip.equals("0:0:0:0:0:0:0:1")?"localhost":ip;
     }
 }

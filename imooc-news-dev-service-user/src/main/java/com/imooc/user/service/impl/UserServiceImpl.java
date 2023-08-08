@@ -92,6 +92,7 @@ public class UserServiceImpl implements UserService {
         return appUserMapper.selectByPrimaryKey(userId);
     }
 
+    //TODO 更新user，延迟双清
     @Override
     public void updateUserInfo(UpdateUserInfoBO updateUserInfoBO) {
 
